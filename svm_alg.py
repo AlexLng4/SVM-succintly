@@ -1,4 +1,4 @@
-from generator.data_generator import DataGenerator
+from magic_data.data_generator import DataGenerator
 import json
 from pathlib import Path
 
@@ -15,7 +15,7 @@ def generate_data(base_path):
 
 def main():
     base_path = Path(__file__).resolve().parent
-    
+
         
 
 if __name__ == "__main__":
