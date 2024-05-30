@@ -1,1 +1,1 @@
-{"ClassA": {"number_of_samples": 1000, "number_of_features": 2, "points_distribution": "Random", "min_range": 0, "max_range": 200}, "ClassB": {"number_of_samples": 1000, "number_of_features": 2, "min_range": -200, "max_range": 0}}
+{"ClassA": {"number_of_samples": 100, "number_of_features": 2, "points_distribution": "Random", "min_range": 0, "max_range": 50}, "ClassB": {"number_of_samples": 100, "number_of_features": 2, "min_range": -50, "max_range": 0}}
