@@ -2,10 +2,10 @@
 SVM - data analyse. Useful for extracting/ploting data
 
 """
+from magic_data.data_handler import DataHandler
 
-class DataG:
+class DataAnalyse(DataHandler):
     
-    def __init__(self, data_configuration):
+    def __init__(self, file_route):
+        super().__init__(file_route)
         
-        if type(data_configuration) is dict:
-            self.data = self.generate_samples(data_configuration) 

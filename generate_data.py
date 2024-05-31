@@ -1,4 +1,5 @@
-from magic_data.data_handler import DataHandler
+# simple script to generate data for training/testing
+from magic_data.data_generator import DataGenerator
 import json
 from pathlib import Path
 
@@ -15,8 +16,9 @@ def main():
 
     with open(config_path) as data:
         data_cofiguration = json.load(data)
-    data_generator = DataHandler(data_configuration=data_cofiguration, file_name=file_name, file_route=config_path_csv)
-    #data_generator.generate_samples()
+    data_generator = DataGenerator(data_configuration=data_cofiguration, file_name=file_name, file_route=config_path_csv)
+    data_generator.generate_samples()
+
 
 if __name__ == "__main__":
     main()
